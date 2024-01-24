@@ -1,0 +1,272 @@
+﻿  GameState.cpp
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(10,14): error C2143: syntax error: missing ';' before '&'
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(10,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(10,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,16): error C2061: syntax error: identifier 'GameState'
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(22,16): error C2061: syntax error: identifier 'GameState'
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(22,5): error C2535: 'GameObject::GameObject(void)': member function already defined or declared
+  (compiling source file 'GameState.cpp')
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,5):
+  see declaration of 'GameObject::GameObject'
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,71): error C2065: 'gs': undeclared identifier
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,83): error C2065: 'name': undeclared identifier
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,63): error C2614: 'GameObject': illegal member initialization: 'm_state' is not a base or member
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,24): error C2143: syntax error: missing ',' before '&'
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(18,7): error C3668: 'Player::update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.h(18,7): error C3668: 'Pipe::update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'GameState.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(9,18): error C2665: 'Pipe::Pipe': no overloaded function could convert all the argument types
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.h(30,1):
+  could be 'Pipe::Pipe(const Pipe &)'
+  	C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(9,18):
+  	'Pipe::Pipe(const Pipe &)': cannot convert argument 1 from 'GameState' to 'const Pipe &'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(9,19):
+  		Reason: cannot convert from 'GameState' to 'const Pipe'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(9,19):
+  		No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.h(21,2):
+  or       'Pipe::Pipe(const Game &)'
+  	C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(9,18):
+  	'Pipe::Pipe(const Game &)': cannot convert argument 1 from 'GameState' to 'const Game &'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(9,19):
+  		Reason: cannot convert from 'GameState' to 'const Game'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(9,19):
+  		use of undefined type 'Game'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(16,21):
+  		see declaration of 'Game'
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(9,18):
+  while trying to match the argument list '(GameState)'
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,21): error C2665: 'Player::Player': no overloaded function could convert all the argument types
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(24,1):
+  could be 'Player::Player(Player &&)'
+  	C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,21):
+  	'Player::Player(Player &&)': cannot convert argument 1 from 'GameState' to 'Player &&'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,22):
+  		Reason: cannot convert from 'GameState' to 'Player'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,22):
+  		No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(24,1):
+  or       'Player::Player(const Player &)'
+  	C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,21):
+  	'Player::Player(const Player &)': cannot convert argument 1 from 'GameState' to 'const Player &'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,22):
+  		Reason: cannot convert from 'GameState' to 'const Player'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,22):
+  		No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,2):
+  or       'Player::Player(const int)'
+  	C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,21):
+  	'Player::Player(const int)': cannot convert argument 1 from 'GameState' to 'const int'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,22):
+  		No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(16,2):
+  or       'Player::Player(const Game &)'
+  	C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,21):
+  	'Player::Player(const Game &)': cannot convert argument 1 from 'GameState' to 'const Game &'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,22):
+  		Reason: cannot convert from 'GameState' to 'const Game'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,22):
+  		use of undefined type 'Game'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(16,21):
+  		see declaration of 'Game'
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(20,21):
+  while trying to match the argument list '(GameState)'
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(43,35): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(62,17): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameState.cpp(66,35): warning C4305: 'argument': truncation from 'double' to 'float'
+  GameObject.cpp
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(6,23): error C2504: 'GameObject': base class undefined
+  (compiling source file 'GameObject.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'GameObject.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,24): error C2143: syntax error: missing ',' before '&'
+  (compiling source file 'GameObject.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(18,7): error C3668: 'Player::update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'GameObject.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(19,7): error C3668: 'Player::draw': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'GameObject.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(20,7): error C3668: 'Player::init': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'GameObject.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.h(7,21): error C2504: 'GameObject': base class undefined
+  (compiling source file 'GameObject.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.h(18,7): error C3668: 'Pipe::update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'GameObject.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.h(19,7): error C3668: 'Pipe::draw': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'GameObject.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.h(20,7): error C3668: 'Pipe::init': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'GameObject.cpp')
+  
+  main.cpp
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(10,14): error C2143: syntax error: missing ';' before '&'
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(10,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(10,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,16): error C2061: syntax error: identifier 'GameState'
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(22,16): error C2061: syntax error: identifier 'GameState'
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(22,5): error C2535: 'GameObject::GameObject(void)': member function already defined or declared
+  (compiling source file 'main.cpp')
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,5):
+  see declaration of 'GameObject::GameObject'
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,71): error C2065: 'gs': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,83): error C2065: 'name': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,63): error C2614: 'GameObject': illegal member initialization: 'm_state' is not a base or member
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,24): error C2143: syntax error: missing ',' before '&'
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(18,7): error C3668: 'Player::update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'main.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.h(18,7): error C3668: 'Pipe::update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'main.cpp')
+  
+  Pipe.cpp
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(6,23): error C2504: 'GameObject': base class undefined
+  (compiling source file 'Pipe.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Pipe.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,24): error C2143: syntax error: missing ',' before '&'
+  (compiling source file 'Pipe.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(18,7): error C3668: 'Player::update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Pipe.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(19,7): error C3668: 'Player::draw': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Pipe.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(20,7): error C3668: 'Player::init': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Pipe.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\gamestate.h(10,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Pipe.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\gamestate.h(10,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Pipe.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\gamestate.h(10,22): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Pipe.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.h(18,7): error C3668: 'Pipe::update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Pipe.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.cpp(40,14): error C2665: 'GameObject::GameObject': no overloaded function could convert all the argument types
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\gameobject.h(23,1):
+  could be 'GameObject::GameObject(const GameObject &)'
+  	C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.cpp(40,14):
+  	'GameObject::GameObject(const GameObject &)': cannot convert argument 1 from 'const Game' to 'const GameObject &'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.cpp(40,15):
+  		Reason: cannot convert from 'const Game' to 'const GameObject'
+  		C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.cpp(40,15):
+  		No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\gameobject.h(15,5):
+  or       'GameObject::GameObject(GameState &,const std::string &)'
+  	C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.cpp(40,14):
+  	'GameObject::GameObject(GameState &,const std::string &)': cannot convert argument 1 from 'const Game' to 'GameState &'
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.cpp(40,14):
+  while trying to match the argument list '(const Game)'
+  
+  player.cpp
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(10,14): error C2143: syntax error: missing ';' before '&'
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(10,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(10,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,16): error C2061: syntax error: identifier 'GameState'
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(22,16): error C2061: syntax error: identifier 'GameState'
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(22,5): error C2535: 'GameObject::GameObject(void)': member function already defined or declared
+  (compiling source file 'player.cpp')
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,5):
+  see declaration of 'GameObject::GameObject'
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,71): error C2065: 'gs': undeclared identifier
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,83): error C2065: 'name': undeclared identifier
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\GameObject.h(15,63): error C2614: 'GameObject': illegal member initialization: 'm_state' is not a base or member
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(17,24): error C2143: syntax error: missing ',' before '&'
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(18,7): error C3668: 'Player::update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\Pipe.h(18,7): error C3668: 'Pipe::update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'player.cpp')
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.cpp(4,9): error C2511: 'Player::Player(GameState *)': overloaded member function not found in 'Player'
+  C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.h(6,7):
+  see declaration of 'Player'
+  
+C:\Users\USER\Downloads\MyFlappyBird\MyFlappyBird\player.cpp(6,1): error C2550: 'Player::{ctor}': constructor initializer lists are only allowed on constructor definitions
+  util.cpp
+  Generating Code...
