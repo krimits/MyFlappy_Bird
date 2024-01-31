@@ -1,18 +1,19 @@
 #include "graphics.h"
-#include "gamestate.h"
+#include "GameState.h"
 #include "config.h"
 #include "util.h"
 
 void update(float ms)
 {
-	GameState* gameState = reinterpret_cast<GameState*>(graphics::getUserData());
-	gameState->update();
+	GameState* game = reinterpret_cast<GameState *>(graphics::getUserData());
+	game->update();
+
 }
 
 void draw()
 {
-	GameState* gameState = reinterpret_cast<GameState*>(graphics::getUserData());
-	gameState->draw();
+	GameState* game = reinterpret_cast<GameState *>(graphics::getUserData());
+	game->draw();
 }
 
 int main()
