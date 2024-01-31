@@ -14,7 +14,6 @@ class Player : public GameObject
 
 public:
 	Player(const class Game& mygame);
-	Player(const GameState& GameState);
 	void update() override;
 	void draw() override;
 	void init() override;
