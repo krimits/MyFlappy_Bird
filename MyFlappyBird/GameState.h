@@ -2,6 +2,7 @@
 
 #include "player.h"
 #include "Pipe.h"
+#include "MovingPipe.h"
 
 class GameState
 {
@@ -15,6 +16,7 @@ class GameState
 	bool collision;
 	int scoreCounter = 0;
 	int highScore = 0;
+	int difficulty = 1;
 	status_g status;
 
 	void updateStart();
@@ -30,6 +32,8 @@ public:
 	void update();
 	void draw();
 	void init();
+	void increaseDifficulty() { difficulty++; }
+	int getDifficulty() const { return difficulty; }
 	GameState();
 	~GameState();
 };
