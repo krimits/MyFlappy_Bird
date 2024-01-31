@@ -1,13 +1,17 @@
 #include "GameState.h"
 #include "graphics.h"
 #include "config.h"
+#include "MovingPipe.h"
 
-void GameState::spawnPipe()
-{
-	if (!pipe)
-	{
-		pipe = new Pipe(*this);
-	}
+void GameState::spawnPipe() {
+    if (!pipe) {
+        // Εδώ αποφασίζουμε αν θα δημιουργήσουμε ένα στατικό ή κινούμενο εμπόδιο
+        if (getDifficulty() > 3) { // Για παράδειγμα, αν η δυσκολία είναι μεγάλη, δημιουργούμε MovingPipe
+            pipe = new MovingPipe(*this, true); // Δημιουργία κινούμενου εμποδίου
+        } else {
+            pipe = new Pipe(*this); // Δημιουργία στατικού εμποδίου
+        }
+    }
 }
 
 void GameState::updateStart()
@@ -59,7 +63,13 @@ void GameState::updatePlay()
 	if (withinX_old && !withinX)
 	{
 		scoreCounter++;
-		pipe->speedup(0.05);
+        if (scoreCounter % 3 == 0) // Αυξάνουμε τη δυσκολία κάθε φορά που ο παίκτης πετυχαίνει 3 πόντους
+		{
+            increaseDifficulty();
+        }
+
+        // Υπάρχουσα λογική για την αύξηση της ταχύτητας του Pipe
+        pipe->speedup(0.05 + getDifficulty() * 0.01);
 
 		graphics::Brush br;
 		br.texture = std::string(ASSET_PATH) + "ok.mp3";
@@ -84,6 +94,7 @@ void GameState::updateEnd()
 		status = START;
 	}
 }
+
 
 void GameState::update()
 {
