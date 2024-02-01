@@ -3,35 +3,48 @@
 #include "config.h"
 #include "util.h"
 
-void update(float ms)
-{
-	GameState* game = reinterpret_cast<GameState *>(graphics::getUserData());
-	game->update();
-
+// Ενημερώνει την κατάσταση του παιχνιδιού σε κάθε κύκλο
+void update(float ms) {
+    // Ανάκτηση του αντικειμένου GameState από τα δεδομένα του χρήστη
+    GameState* game = reinterpret_cast<GameState *>(graphics::getUserData());
+    if (game) {
+        // Καλεί την ενημερωμένη μέθοδο της κλάσης GameState
+        game->update();
+    }
 }
 
-void draw()
-{
-	GameState* game = reinterpret_cast<GameState *>(graphics::getUserData());
-	game->draw();
+// Σχεδιάζει το παιχνίδι σε κάθε κύκλο
+void draw() {
+    // Ανάκτηση του αντικειμένου GameState από τα δεδομένα του χρήστη
+    GameState* game = reinterpret_cast<GameState *>(graphics::getUserData());
+    if (game) {
+        // Καλεί την μέθοδο σχεδίασης της κλάσης GameState
+        game->draw();
+    }
 }
 
-int main()
-{
-	GameState mygame;
+int main() {
+    // Δημιουργία αντικειμένου της κλάσης GameState
+    GameState mygame;
 
-	graphics::createWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "MyFlappyBird");
+    // Δημιουργία παραθύρου για το παιχνίδι
+    graphics::createWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "MyFlappyBird");
 
-	graphics::setUserData(&mygame);
+    // Ρύθμιση του αντικειμένου GameState ως δεδομένα χρήστη
+    graphics::setUserData(&mygame);
 
-	graphics::setDrawFunction(draw);
-	graphics::setUpdateFunction(update);
+    // Ορισμός των λειτουργιών σχεδίασης και ενημέρωσης
+    graphics::setDrawFunction(draw);
+    graphics::setUpdateFunction(update);
 
-	graphics::setCanvasSize(CANVAS_WIDTH, CANVAS_HEIGHT);
-	graphics::setCanvasScaleMode(graphics::CANVAS_SCALE_FIT);
+    // Ρύθμιση των διαστάσεων και της κλίμακας του καμβά
+    graphics::setCanvasSize(CANVAS_WIDTH, CANVAS_HEIGHT);
+    graphics::setCanvasScaleMode(graphics::CANVAS_SCALE_FIT);
 
-	mygame.init();
-	graphics::startMessageLoop();
+    // Αρχικοποίηση του παιχνιδιού
+    mygame.init();
+    // Έναρξη του βρόχου ενημέρωσης και σχεδίασης
+    graphics::startMessageLoop();
 
-	return 0;
+    return 0;
 }
