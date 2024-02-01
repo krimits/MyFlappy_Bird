@@ -1,23 +1,30 @@
 #pragma once
-
-#include "config.h"
 #include "GameObject.h"
+#include <string>
 
-class Player : public GameObject
-
-{
-	float pos_x = 120.0f;
-	float pos_y = CANVAS_HEIGHT / 2.0f;
-	float gravity = 0.5f;
-	float lift = -1.3f;
-	float speed = 0.0f;
+// Κλάση Player που κληρονομεί από GameObject και αντιπροσωπεύει τον παίκτη στο παιχνίδι
+class Player : public GameObject {
+    float pos_x; // Η οριζόντια θέση του παίκτη
+    float pos_y; // Η κάθετη θέση του παίκτη
+    float gravity; // Η επίδραση της βαρύτητας στον παίκτη
+    float lift; // Η δύναμη ανύψωσης όταν ο παίκτης πατάει το πλήκτρο για να ανέβει
+    float speed; // Η ταχύτητα κίνησης του παίκτη
+    float maxSpeed; // Η μέγιστη ταχύτητα του παίκτη
+    float height; // Το ύψος του παίκτη
 
 public:
-	Player(const class Game& mygame);
-	void update() override;
-	void draw() override;
-	void init() override;
-	float getPosX() { return pos_x; }
-	float getPosY() { return pos_y; }
-	void liftUp() { speed += lift; }
+    // Κατασκευαστής της κλάσης Player
+    Player(GameState& gameState);
+
+    // Ενημερώνει την κατάσταση του παίκτη σε κάθε κύκλο του παιχνιδιού
+    void update(float dt) override;
+
+    // Σχεδιάζει τον παίκτη στην οθόνη
+    void draw() override;
+
+    // Αρχικοποιεί τον παίκτη
+    void init() override;
+
+    // Επιτρέπει στον παίκτη να ανέβει όταν πατηθεί το αντίστοιχο πλήκτρο
+    void liftUp();
 };
