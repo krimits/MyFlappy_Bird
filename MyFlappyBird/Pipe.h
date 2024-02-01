@@ -2,24 +2,26 @@
 #include "GameObject.h"
 #include "GameState.h"
 
+// Η κλάση Pipe αντιπροσωπεύει τα στατικά εμπόδια στο παιχνίδι
 class Pipe : public GameObject {
-    float pos_x;
-    float pos_y;
-    float top;
-    float bottom;
-    float pipe_width;
-    float speed;
-    float baseSpeed = 1.8f;
+    float pos_x; // Η οριζόντια θέση του εμποδίου
+    float pos_y; // Η κάθετη θέση του εμποδίου
+    float top; // Το ανώτερο σημείο του εμποδίου
+    float bottom; // Το κατώτερο σημείο του εμποδίου
+    float pipe_width; // Το πλάτος του εμποδίου
+    float speed; // Η ταχύτητα κίνησης του εμποδίου
+    float baseSpeed = 1.8f; // Η βασική ταχύτητα του εμποδίου
 
 public:
-    Pipe(GameState& mygame);
-    ~Pipe();
+    Pipe(GameState& mygame); // Κατασκευαστής
+    ~Pipe(); // Καταστροφέας
 
-    void update() override;
-    void draw() override;
-    void init() override;
-    void speedup(float s);
+    void update() override; // Ενημερώνει τη θέση του εμποδίου
+    void draw() override; // Σχεδιάζει το εμπόδιο
+    void init() override; // Αρχικοποιεί το εμπόδιο
+    void speedup(float s); // Αυξάνει την ταχύτητα του εμποδίου
 
+    // Getters για την ανάκτηση πληροφοριών του εμποδίου
     float getPosX() const { return pos_x; }
     float getPosY() const { return pos_y; }
     float getTop() const { return top; }
